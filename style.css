@@ -1,0 +1,58 @@
+#body-id {
+      margin: 3em;
+      background: url("gfx/multikleur-1500x500.jpg");
+      background-color: #eb9316;
+      background-size: cover;
+      /*background-position: center center;
+      background-repeat: no-repeat;*/
+      background-attachment: fixed;
+      color: #fff;
+      font-family: 'Raleway', Verdana, sans-serif;
+    }
+    button.navbar-toggle {
+    background-color: #ffff00;
+    }
+    #knop {
+      margin-top: 0.5em;
+      background-color: #ffff00;
+    }
+    .mijnrij {
+      padding: 1em;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+    }
+    .bg-mijnrij {
+      background-color: #333;
+    }
+    .rood {
+      background-color: #a94442;
+      border: none;
+    }
+    .img-jiro {
+      border: 12px solid #ffcc00;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+    }
+    .nav-pills>li>a {
+      margin: 1em;
+      background: #00ddff; /*#f2dede*/
+      color: #a94442;
+      font-weight: bold;
+    }
+    a, .panel-body {
+      color: #a94442;
+    }
+    a:hover {
+      color: #00ddff;
+    }
+    .divider-jiro, .section-heading {
+    margin-top: 80px;
+    }
+    .tekst-klein {
+      font-size: 85%;
+    }
+    .btn-lg {
+    margin-top: 0.3em;
+    }
