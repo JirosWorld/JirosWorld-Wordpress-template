@@ -1,3 +1,5 @@
 # JirosWorld Wordpress Template
 
-**JirosWorld Wordpress template with a slimmed down Bootstrap CSS and slimmed down jQuery**
+JirosWorld Wordpress theme with a slimmed down Bootstrap CSS file and slimmed down jQuery, by Jiro Ghianni.
+
+See README.md for more info.
