@@ -14,11 +14,13 @@ JirosWorld Wordpress Template's main goal is to function as a simple starter the
 * PHP loops
 * jQuery
 * javascript
-* and the lovely oldschool Markup language.
+* OTAP/DTAP
+* Deployment
+* and the lovely oldschool Markdown language.
 
 #### And more?
 
-Follow [@jirosworld](http://twitter.com/jirosworld) on Twitter for the latest news.
+Follow me [@jirosworld](http://twitter.com/jirosworld) on Twitter for the latest news.
 
 ☺
 ---
