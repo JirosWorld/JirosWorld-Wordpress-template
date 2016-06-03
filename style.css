@@ -1,3 +1,6 @@
+/* Jiro's stylesheet */
+/* */
+
 #body-id {
       margin: 3em;
       background: url("gfx/multikleur-1500x500.jpg");
@@ -37,7 +40,7 @@
     }
     .nav-pills>li>a {
       margin: 1em;
-      background: #00ddff; /*#f2dede*/
+      background: #00ddff;
       color: #a94442;
       font-weight: bold;
     }
