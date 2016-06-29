@@ -11,7 +11,7 @@ if ( ! empty( $comments_by_type['comment'] ) ) :
 
 <?php 
 endif; 
-endif;
+
 if ( comments_open() ) comment_form();
 ?>
 </section>
