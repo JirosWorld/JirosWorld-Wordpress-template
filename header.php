@@ -44,27 +44,14 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <!-- <script src="scripts/jquery1113-jiro.js"></script> -->
- <script src="scripts/jquery-1.12.4.min.js"></script>
- <script src="scripts/jquery-migrate-1.4.1.min.js"></script>
-
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<!-- <script src="scripts/bootstrap-jiro.js"></script> -->
- <script src="scripts/google-analytics.js"></script>
-<!-- <link href='styles/bootstrap-jiro.css' rel='stylesheet' type='text/css'> -->
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<!-- <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" /> -->
 <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
-
-<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" />
-<!-- <link href='style.css' rel='stylesheet' type='text/css'> -->
-
-<!-- Lettertypen -->
 <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Raleway:400' rel='stylesheet' type='text/css'>
 
-<!-- Als laatste in de HEAD het knop scriptje --> 
- <script src="scripts/javascripts.js"></script>
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 <?php wp_head(); ?>
@@ -95,7 +82,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 
-      <button class="btn-default btn-lg" id="knop"><abbr title="Verander de achtergrond kleur!">SWAP BACKGROUND</abbr></button>
+<button class="btn-default btn-lg" id="knop"><abbr title="Verander de achtergrond kleur!">SWAP BACKGROUND</abbr></button>
               
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -103,16 +90,16 @@
              
                 <ul class="nav nav-pills navbar-right">
                     <li role="presentation">
-                        <a href="#home">Home</a>
+                        <a href="#home" class="smoothScroll">Home</a>
                     </li>
                     <li role="presentation">
-                        <a href="#about">About</a>
+                        <a href="#about" class="smoothScroll">About</a>
                     </li>
                     <li role="presentation">
-                        <a href="#portfolio">Portfolio</a>
+                        <a href="#portfolio" class="smoothScroll">Portfolio</a>
                     </li>
                    <li role="presentation">
-                        <a href="#contact">Contact</a>
+                        <a href="#contact" class="smoothScroll">Contact</a>
                     </li>
                 </ul>
             </div>

@@ -9,8 +9,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: black, red, rainbow, one-column, right-sidebar, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, flexible-header, post-formats, rtl-language-support
 */
 
-#body-id {
-      margin: 3em;
+body {
+      margin: 0.5em;
+      padding: 0.5em;
       background: url("gfx/multikleur-1500x500.jpg");
       background-color: #eb9316;
       background-size: cover;
@@ -51,6 +52,9 @@ Tags: black, red, rainbow, one-column, right-sidebar, responsive-layout, accessi
       background: #00ddff;
       color: #a94442;
       font-weight: bold;
+    }
+    .navbar {
+      padding-top: 3em;
     }
     a, .panel-body {
       color: #a94442;

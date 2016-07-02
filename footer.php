@@ -40,6 +40,9 @@
 </div> <!-- einde voeter-div -->
 
 </div> <!-- einde div id page-wrap? -->
-<?php wp_footer(); ?>
+
+<?php wp_footer(); ?>Hier staat de WP footer enqueue.
+ <script src="scripts/google-analytics.js"></script>
+ <script src="scripts/javascripts.js"></script>
 </body>
 </html>
