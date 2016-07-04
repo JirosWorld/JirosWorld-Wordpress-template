@@ -120,7 +120,7 @@
     <?php endwhile;
     endif;
     wp_reset_postdata();   
-    endforeach;
+    //endforeach;
     ?>
 
                 </div> <!-- einde van een-derde kolom -->
