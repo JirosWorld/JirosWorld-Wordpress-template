@@ -1,28 +1,15 @@
 <?php
-/*
-    ==========================================
-     Include scripts
-    ==========================================
-*/
+	
 function jirosworld_script_enqueue() {
-    //css
-    wp_enqueue_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '3.3.4', 'all');
-    wp_enqueue_style('customstyle', get_template_directory_uri() . '/css/jirosworld.css', array(), '1.0.0', 'all');
-    //js
-    wp_enqueue_script('jquery');
-    wp_enqueue_script('bootstrapjs', get_template_directory_uri() . '/js/bootstrap.min.js', array(), '3.3.4', true);
-    wp_enqueue_script('customjs', get_template_directory_uri() . '/js/jirosworld.js', array(), '1.0.0', true);
-    
-}
-
+    wp_enqueue_style( 'bootstrapstijl', get_template_directory_uri() . 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css', array(), '3.3.6', 'all' );
+    wp_enqueue_style( 'mijnstijl', get_template_directory_uri() . '/styles/style.css', array(), '1.0.0', 'all' );
+    wp_enqueue_script( 'mijnscript', get_template_directory_uri() . '/scripts/javascripts.js', array(), '1.0.0', true );
+    }
 add_action( 'wp_enqueue_scripts', 'jirosworld_script_enqueue');
+//bovenstaande hook wordt uitgevoerd als je wp_head aanroept in je page
 
-/*
-    ==========================================
-     Activate menus
-    ==========================================
-*/
-function jirosworld_theme_setup() {
+
+function awesome_theme_setup() {
     
     add_theme_support('menus');
     
@@ -31,7 +18,7 @@ function jirosworld_theme_setup() {
     
 }
 
-add_action('init', 'jirosworld_theme_setup');
+add_action('init', 'awesome_theme_setup');
 
 /*
     ==========================================
@@ -48,7 +35,7 @@ add_theme_support('post-formats',array('aside','image','video'));
      Sidebar function
     ==========================================
 */
-function jirosworld_widget_setup() {
+function awesome_widget_setup() {
     
     register_sidebar(
         array(  
@@ -64,4 +51,6 @@ function jirosworld_widget_setup() {
     );
     
 }
-add_action('widgets_init','jirosworld_widget_setup');
+add_action('widgets_init','awesome_widget_setup');
+
+?>

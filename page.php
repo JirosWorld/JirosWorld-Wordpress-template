@@ -54,12 +54,21 @@
                             <h2 class="section-heading">
                                 JirosWorld introduction
                             </h2><br>
-                            <p class="lead">
-                                Theme by a
-                            </p>
-                            <mark>
-<a class="link" target="_blank" href="http://www.freecodecamp.com/jolarti">continuously learning</a>
-</mark>web nerd, experimental artist, cartoonist, homo universalis and genderqueer spokesperson based in Amsterdam (Netherlands).
+                            
+       <?php 
+        
+        if( have_posts() ):
+            
+            while( have_posts() ): the_post(); ?>
+                
+                <?php get_template_part('content',get_post_format()); ?>
+            
+            <?php endwhile;
+            
+        endif;
+                
+        ?>
+                            
                             <div class="divider-jiro"></div>
                             <div class="panel panel-danger">
                                 <div class="panel-heading">
@@ -100,28 +109,43 @@
             <div class="row mijnrij">
 
                 <div class="col-md-4 col-sm-6 portfolio-item">   
-    <?php 
-    $argus = array( 
-    'type' => 'post',
-    'posts_per_page' => 1,
-    'category__in' => $category->term_id,
-    'category__not_in' => array( 10 ),
+<?php 
+    
+    $args_cat = array(
+        'include' => '1, 9, 8'
     );
-
-    $lastBlog = new WP_Query( $argus );
-
-    if( $lastBlog->have_posts() ):
-    while( $lastBlog->have_posts() ): $lastBlog->the_post(); ?>
+    
+    $categories = get_categories($args_cat);
+    foreach($categories as $category):
         
-        <div class="col-xs-12 col-sm-4">
-            <?php get_template_part('content','featured'); ?>
-        </div>
+        $args = array( 
+            'type' => 'post',
+            'posts_per_page' => 1,
+            'category__in' => $category->term_id,
+            'category__not_in' => array( 10 ),
+        );
+        
+        $lastBlog = new WP_Query( $args );
+        
+        if( $lastBlog->have_posts() ):
+            
+            while( $lastBlog->have_posts() ): $lastBlog->the_post(); ?>
+                
+                <div class="col-xs-12 col-sm-4">
+                
+                    <?php get_template_part('content','featured'); ?>
+                
+                </div>
+            
+            <?php endwhile;
+            
+        endif;
+        
+        wp_reset_postdata();
+        
+    endforeach;
 
-    <?php endwhile;
-    endif;
-    wp_reset_postdata();   
-    //endforeach;
-    ?>
+?>
 
                 </div> <!-- einde van een-derde kolom -->
                 </div><!-- End of Portfolio img1 2 3 row -->
