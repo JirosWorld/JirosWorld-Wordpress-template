@@ -123,7 +123,7 @@
 <?php 
     
     $args_cat = array(
-        'include' => '1, 9, 8'
+        'include' => '1, 2, 3'
     );
     
     $categories = get_categories($args_cat);
@@ -144,7 +144,7 @@
                 
                 <div class="col-xs-12 col-sm-4">
                 
-                    <?php get_template_part('content','featured'); ?>
+                    <?php get_template_part('content','portfolio'); ?>
                 
                 </div>
             
