@@ -117,7 +117,7 @@
     <?php endwhile;
     endif;
     wp_reset_postdata();   
-    endforeach;
+    //endforeach;
     ?>
 
                 </div> <!-- einde van een-derde kolom -->
@@ -169,4 +169,5 @@
 </div><?php else : ?>
 <h2>
     Not Found
-</h2><?php endif; ?><?php get_sidebar(); ?><?php get_footer(); ?>
+</h2><?php endif; ?>
+<?php get_footer(); ?>

@@ -163,4 +163,4 @@
 <?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
 <?php comments_template(); ?>
 
-<?php get_sidebar(); ?><?php get_footer(); ?>
+<?php get_footer(); ?>

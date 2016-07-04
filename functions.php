@@ -18,6 +18,7 @@ function jolarti_setup() {
 }
 endif;
 
+add_theme_support('post-formats',array('aside','image','video'));
 
 //mijn eigen stylesheet functie
 //de eerste string is zomaar een handle, het pad naar de stylesheet moet absoluut zijn, dus get directory van je hele wordpress installatie en concateneer die met het pad naar je stylesheet en een lege array omdat er geen dependancies in zitten - dan geef je een version number voor toekomstige devs en tot slot op welke media je site geprint mag worden - dat laatste is een boolean voor javascript omdat het beter is om die scripts in de footer aan te roepen 
