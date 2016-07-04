@@ -66,11 +66,21 @@
                                     </h3>
                                 </div>
                                 <div class="panel-body">
-                                    <span class="alert-danger">Languages and Frameworks:</span><br>
-                                    Whatever you can do.<br>
-                                    <span class="alert-danger">Tools &amp; expertise:</span><br>
-                                    Whatever you have done.
-                                </div>
+        <?php 
+        
+        if( have_posts() ):
+            
+            while( have_posts() ): the_post(); ?>
+                
+                <?php get_template_part('content',get_post_format()); ?>
+            
+            <?php endwhile;
+            
+        endif;
+                
+        ?>
+    
+    </div>
                             </div>
                         </div>
                         <div class="col-lg-5 col-lg-offset-2 col-sm-6 collapse navbar-collapse">
