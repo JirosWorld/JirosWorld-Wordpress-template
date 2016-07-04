@@ -18,11 +18,9 @@
                     <div class="row mijnrij">
                         <div class="col-lg-12">
                             <div class="intro-message">
-                                <h1>
-                                    Intro ~ intromessage
-                                </h1>
+                                <h1><a href="<?php echo get_option( 'home' ); ?>/"><?php bloginfo( 'name' ); ?></a></h1>
                                 <h3>
-                                    Neat large tag line.<br>
+                                    <div class="description"><?php bloginfo( 'description' ); ?></div>
                                     <span class="tekst-klein">Hire the queerest junior web developer - get a free comic!</span>
                                 </h3>
                                 <hr class="intro-divider">
@@ -68,7 +66,7 @@
         endif;
                 
         ?>
-                            
+
                             <div class="divider-jiro"></div>
                             <div class="panel panel-danger">
                                 <div class="panel-heading">

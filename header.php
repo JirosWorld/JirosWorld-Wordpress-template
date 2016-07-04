@@ -47,8 +47,7 @@
 <!-- <script src="scripts/jquery1113-jiro.js"></script> -->
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<!-- <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" /> -->
-<link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+
 <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Raleway:400' rel='stylesheet' type='text/css'>
 
@@ -83,6 +82,8 @@
                 </button>
                 
 <button class="btn-default btn-lg" id="knop"><abbr title="Verander de achtergrond kleur!">SWAP BACKGROUND</abbr></button>
+<div class="search-form-container">
+          <?php get_search_form(); ?></div>
               
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
