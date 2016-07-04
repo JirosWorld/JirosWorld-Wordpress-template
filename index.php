@@ -166,8 +166,6 @@
     <div class="prev-posts">
         <?php previous_posts_link('Newer Entries &raquo;') ?>
     </div>
-</div><?php else : ?>
-<h2>
-    Not Found
-</h2><?php endif; ?>
+</div>
+
 <?php get_footer(); ?>
