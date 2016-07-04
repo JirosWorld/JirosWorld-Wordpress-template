@@ -1,12 +1,9 @@
 <?php get_header(); ?>
 
-<div <?php post_class() ?> id="post-&lt;?php the_ID(); ?&gt;">
-    <h2>
-        <a href="%3C?php%20the_permalink()%20?%3E"><?php the_title(); ?></a>
-    </h2>
+<div>
 
     <div class="entry">
-        <?php the_content(); ?><!-- start pagina Header -->
+        
         <a id="home"></a>
         <div class="intro-header">
             <div class="bg-overlay">
@@ -14,7 +11,7 @@
                     <div class="row mijnrij">
                         <div class="col-lg-12">
                             <div class="intro-message">
-                                <h1><a href="<?php echo get_option( 'home' ); ?>/"><?php bloginfo( 'name' ); ?></a></h1>
+                                <h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
                                 <h3>
                                     <div class="description"><?php bloginfo( 'description' ); ?></div>
                                     <span class="tekst-klein">Hire the queerest junior web developer - get a free comic!</span>
@@ -49,7 +46,39 @@
                                 JirosWorld introduction
                             </h2><br>
                             <p class="lead">
-                                Theme by a
+    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+    <div id="jolarti">
+
+            <h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+
+<div class="meta">
+<small><em>Posted on:</em> <?php the_time('F jS, Y') ?> <em>by</em> <?php the_author() ?> in <?php the_category(); ?>
+    <?php comments_popup_link('No Comments', '1 Comment', '% Comments', 'comments-link', ''); ?></small>
+</div>
+
+            <div class="entry">
+                <?php the_content(); ?>
+            </div>
+
+            <div class="postmetadata">
+                <?php the_tags( 'Tags: ', ', ', '<br />' ); ?>
+                Posted in <?php the_category( ', ' ) ?> |
+                <?php comments_popup_link( 'No Comments &#187;', '1 Comment &#187;', '% Comments &#187;' ); ?>
+            </div>
+
+    </div>
+
+    <?php endwhile; ?>
+
+
+    <?php else : ?>
+
+        <h2>Not Found</h2>
+
+    <?php endif; ?>
+        
+<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
                             </p>
                             <mark>
 <a class="link" target="_blank" href="http://www.freecodecamp.com/jolarti">continuously learning</a>
@@ -93,7 +122,7 @@
                 </div>
             </div> 
             <div class="row mijnrij">
-                 <div class="col-md-4 col-sm-6 portfolio-item">   
+
 <?php 
     
     $args_cat = array(
@@ -132,11 +161,11 @@
 
 ?>
 
-                </div> <!-- einde van een-derde kolom -->
-            </div><!-- End of Portfolio img1 2 3 row -->
+            </div><!-- End of Portfolio img1 2 3 mijnrij row -->
         </div>
     </section>
 </div>
+
 <div class="divider-jiro"></div><a id="contact"></a>
 <div class="banner">
     <div class="bg-overlay4">

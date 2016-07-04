@@ -60,15 +60,11 @@
 
 <div id="header">
 <h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
-<div class="description"><?php bloginfo('description'); ?></div>
-<nav id="site-navigation" class="main-navigation" role="navigation">
-	<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'jolarti' ); ?></button>
-	<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-</nav><!-- #site-navigation -->
+
 </div><!-- einde header-div -->
 
    <!-- Navigation navbar needs Bootstrap JS when collapsing on smaller screens -->
-    <nav class="navbar navbar-default navbar-fixed-top topnav rood" role="navigation">
+    <nav id="site-navigation" class="navbar navbar-default navbar-fixed-top topnav rood main-navigation" role="navigation">
         <div class="container topnav">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -80,13 +76,10 @@
                 </button>
                 
 <button class="btn-default btn-lg search-submit" id="knop"><abbr title="Verander de achtergrond kleur!">SWAP BACKGROUND</abbr></button>
-<div class="search-form-container">
-          <?php get_search_form(); ?></div>
+<div class="search-form-container"><?php get_search_form(); ?></div>
               
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-             
                 <ul class="nav nav-pills navbar-right">
                     <li role="presentation">
                         <a href="#home" class="smoothScroll">Home</a>

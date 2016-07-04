@@ -72,6 +72,13 @@ body {
     margin-top: 0.3em;
     }
 
-    .search-submit, .search-form-control {
+    .portfolio-derde {
+      background-color: #f3bd72;
+    }
+
+    .search-submit, .search-form-control,  .search-form-container, input .search-form-control, #knop {
       display: inline;
+    }
+    input[type=text], form[role=search] {
+      color: #666;
     }

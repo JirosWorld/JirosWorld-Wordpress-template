@@ -2,7 +2,7 @@
 
 	<?php if( has_post_thumbnail() ): ?>
 		
-		<div class="thumbnail"><?php the_post_thumbnail('thumbnail'); ?></div>
+		<div class="thumbnail portfolio-derde"><?php the_post_thumbnail('thumbnail'); ?></div>
 
 	<?php endif; ?>
 	
