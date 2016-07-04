@@ -79,7 +79,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 
-<button class="btn-default btn-lg" id="knop"><abbr title="Verander de achtergrond kleur!">SWAP BACKGROUND</abbr></button>
+<button class="btn-default btn-lg search-submit" id="knop"><abbr title="Verander de achtergrond kleur!">SWAP BACKGROUND</abbr></button>
 <div class="search-form-container">
           <?php get_search_form(); ?></div>
               

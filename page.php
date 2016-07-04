@@ -9,7 +9,7 @@
         <em>Posted on:</em> <?php the_time('F jS, Y') ?> <em>by</em> <?php the_author() ?> <?php comments_popup_link('No Comments', '1 Comment', '% Comments', 'comments-link', ''); ?>
     </div>
     <div class="entry">
-        <?php the_content(); ?><?php if ( has_post_thumbnail() ) { the_post_thumbnail(); } ?><?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>
+        
         <!-- start pagina Header -->
         <a id="home"></a>
         <div class="intro-header">
@@ -52,20 +52,8 @@
                             <h2 class="section-heading">
                                 JirosWorld introduction
                             </h2><br>
-                            
-       <?php 
-        
-        if( have_posts() ):
-            
-            while( have_posts() ): the_post(); ?>
-                
-                <?php get_template_part('content',get_post_format()); ?>
-            
-            <?php endwhile;
-            
-        endif;
-                
-        ?>
+<?php the_content(); ?><?php if ( has_post_thumbnail() ) { the_post_thumbnail(); } ?><?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>
+<p><?php the_content(); ?></p>
 
                             <div class="divider-jiro"></div>
                             <div class="panel panel-danger">

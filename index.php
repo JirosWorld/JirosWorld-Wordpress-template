@@ -4,9 +4,7 @@
     <h2>
         <a href="%3C?php%20the_permalink()%20?%3E"><?php the_title(); ?></a>
     </h2>
-    <div class="meta">
-        <em>Posted on:</em> <?php the_time('F jS, Y') ?> <em>by</em> <?php the_author() ?> <?php comments_popup_link('No Comments', '1 Comment', '% Comments', 'comments-link', ''); ?>
-    </div>
+
     <div class="entry">
         <?php the_content(); ?><!-- start pagina Header -->
         <a id="home"></a>
@@ -64,19 +62,10 @@
                                     </h3>
                                 </div>
                                 <div class="panel-body">
-        <?php 
-        
-        if( have_posts() ):
-            
-            while( have_posts() ): the_post(); ?>
-                
-                <?php get_template_part('content',get_post_format()); ?>
-            
-            <?php endwhile;
-            
-        endif;
-                
-        ?>
+        <div class="meta">
+<em>Posted on:</em> <?php the_time('F jS, Y') ?> <em>by</em> <?php the_author() ?> <?php comments_popup_link('No Comments', '1 Comment', '% Comments', 'comments-link', ''); ?>
+</div>
+    <p><?php the_content(); ?></p>
     
     </div>
                             </div>
