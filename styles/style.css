@@ -71,3 +71,7 @@ body {
     .btn-lg {
     margin-top: 0.3em;
     }
+
+    .search-submit, .search-form-control {
+      display: inline;
+    }
