@@ -23,7 +23,7 @@
     <div class="col-lg-12">
         <?php wp_nav_menu(array('theme_location'=>'primary')); ?>
     <p><a href="wp/en/work/" class="btn btn-default btn-lg "><i class="fa fa-user-plus fa-fw"></i> HIRE ME</a> <br />and get a 28 page queer zine for free!</p>
-    <p class="copyright text-muted small">Copyright &copy; JirosWorld 2016. All Rights Reserved</p>
+
     </div>
     </div>
 </div>
