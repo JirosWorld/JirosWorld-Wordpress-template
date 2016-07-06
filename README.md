@@ -12,10 +12,13 @@ JirosWorld Wordpress Template's main goal is to function as a simple starter the
 * Bootstrap
 * HTML5 & CSS3
 * PHP loops
+* Wordpress WP Query category filters
+* Wordpress page ID templates
 * jQuery
 * javascript
 * OTAP/DTAP
 * Deployment
+* task managers for js concatenation
 * and the lovely oldschool Markdown language.
 
 #### And more?
