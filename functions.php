@@ -3,7 +3,8 @@
 function jirosworld_script_enqueue() {
     wp_enqueue_style( 'bootstr_stijl', get_template_directory_uri() . '/styles/bootstrap-jiro.css', array(), '3.3.6', 'all' );
     wp_enqueue_style( 'mijnstijl', get_template_directory_uri() . '/styles/style.css', array(), '1.0.0', 'all' );
-    wp_enqueue_script( 'jqueery_script', get_template_directory_uri() . '/scripts/jquery1113-jiro.js', array(), '1.12.4', true );
+    // wp_enqueue_script( 'jqueery_script', get_template_directory_uri() . '/scripts/jquery1113-jiro.js', array(), '1.12.4', true );
+    wp_enqueue_script('jquery');
     wp_enqueue_script( 'bootstr_script', get_template_directory_uri() . '/scripts/bootstrap-jiro.js', array(), '3.3.6', true );
     wp_enqueue_script( 'mijnscript', get_template_directory_uri() . '/scripts/javascripts.js', array(), '1.0.0', true );
     }
